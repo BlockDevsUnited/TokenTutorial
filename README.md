@@ -68,6 +68,8 @@ Now you can personalize the token according to your preferences
   
   - Make sure you are still on the Run tab
   
+  - Delect YourTokenName in the drop down menu
+  
   - Click Deploy
   
   - Approve the transaction on metamask. You may need to enable pop ups on your browser
