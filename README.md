@@ -1,6 +1,6 @@
 # Issue an ERC-20 token with Remix and Metamask
 
-This is a step-by-step tutorial on how to issue and manage your own ERC-20 token with solidity by using [Metamask](www.metamask.com), [Remix IDE](www.remix.ethereum.org) and [myetherwallet](www.myetherwallet.com). 
+This is a step-by-step tutorial on how to issue and manage your own ERC-20 token in solidity by using [Metamask](www.metamask.com), [Remix IDE](www.remix.ethereum.org) and [myetherwallet](www.myetherwallet.com). 
 
 By the end of this tutorial you will be able to deploy standard ERC-20 Tokens! Please get your code verified and audited by a 3rd party before releasing any token to the public. 
 
@@ -40,32 +40,30 @@ Launch [Remix](http://remix.ethereum.org)
   
   - Copy/Paste the contents of EIP20.sol from the consensys repo into your new file
   
+  - Rename the contract from EIP20 to YourTokenName.
+  
+  - Rename the constructor function from EIP20 to YourTokenName
+  
 ### Customize your Solidity Smart Contract
 Now you can personalize the token according to your preferences
 
-  - View *Lines 3–15* review the comment section. This is a good reference for the variable you will change in the future.
+  - Decide on a symbol to go with your name, e.g. YTN for YourTokenName
   
-  - For this tutorial we will create **WaterlooCoin**, but you can make whatever you want.
+  - Decide on the number of decimal places your token will have. 
   
-  - Change *Line 4* to the title of your Smart Contract
+  - Decide on your Token Supply, or how many tokens you want to exist in total. 
+    
+  - NOTE: Ethereum only deals in integers only and DOES NOT recognize fractions. 1000 integers are required to represent 1 token with 3 decimal places. Therefore add an extra 0 to your token supply for every decimal place in your token. 
   
-  - Change *Line 6* to the Ropsten Ethereum address of your MetaMask wallet (also listed on the faucet)
+  - Click on the Run tab in remix
   
-  - Change *Line 7’s* Symbol to your respective coin name (Keep it short)
+  - Next to the Deploy Button, Enter your InitialAmount, TokenName, Decimals, TokenSymbol as parameters like so: 1000000,"YourTokenName",3,"YTN". Don't forget quotes for the strings.
   
-  - Change *Line 8* to the name of your token
+  - Alternitavely you can directly code the values into your Smart Contract. Just remember to remove the code that sets the variables inside the constructor function
+
+  - Click Deploy
   
-  - Change *Line 102* from ```TestCoinTwo``` to whatever you prefer.
-  
-  - Do the same for *Line 115*
-  
-  - Go to *Line 116* and change the symbol name to the same as the ones you did in the comment section
-  
-  - Do the same for *Line 117*
-  
-  - Change *Line 120’s* Address to be the same as your MetaMask Public Key (listed on the Faucet)
-  
-  - Same goes for *Line 121*
+  - Approve the transaction on metamask
 
 ### Compiling and Deploying
   -	In Remix, navigate to Settings > **Uncheck** Enable Optimization
@@ -114,7 +112,7 @@ Now we are going to register this contract. To do this:
   
 **If you get a success! It worked.**
 
-To confirm that it works, go to https://ropsten.etherscan.io/ and look up your Public Address. Hit the **View Tokens** dropdown to see if you tokens are in there.
+To confirm that it worked, go to https://ropsten.etherscan.io/ and look up your metamask address. Hit the **View Tokens** dropdown to see if you tokens are in there.
 
 ## Optional - Sending Tokens
 
