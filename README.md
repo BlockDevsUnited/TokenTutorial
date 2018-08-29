@@ -1,4 +1,4 @@
-# Issue and Manage an ERC-20 token in 30 minutes
+# Issue an ERC-20 token with Remix and Metamask
 
 This is a step-by-step tutorial on how to issue and manage your own ERC-20 token with solidity by using [Metamask](www.metamask.com), [Remix IDE](www.remix.ethereum.org) and [myetherwallet](www.myetherwallet.com). 
 
