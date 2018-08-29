@@ -1,45 +1,47 @@
-# Issue Token Demo
+# Issue an ERC-20 token using Remix
 
-Useful Tutorial for Issuing ERC 20 Tokens
+This is a step-by-step tutorial on how to issue and manage your own ERC-20 token with solidity by using [Metamask](www.metamask.com), [Remix IDE](www.remix.ethereum.org) and [myetherwallet](www.myetherwallet.com). 
 
-## Walkthrough:
+By the end of this tutorial you will be able to deploy standard ERC-20 Tokens! Please get your code verified and audited by a 3rd party before releasing any token to the public. 
 
 ### Preparation
 
 Download and Install [MetaMask](https://metamask.io)
 
-  - Install Chrome Extension
+  - Install on Chrome, Firefox or Brave Browser
   
-  - Create a password and save your Private Key
+  - Create a new account and save your 12 word mnemonic
   
-  - Move to the Ropsten Test Network
+  - Select one of the test networks. The Ropsten Network should work fine. 
  
-Get Some [Test Ether](https://faucet.metamask.io/)
+Get Some Testnet Ether
 
-  - The Faucet should auto detect your Public Key through MetaMask
+  - Click "Buy" or "Deposit" on Metamask or go to the [Metamask Faucet](https://faucet.metamask.io/)
   
   - Hit "Send Me Ether". It should not take long (10-20 seconds)
   
   - Double check Ether was received by hitting the MetaMask Icon
   
   
-### Smart Contract
+### Find Smart Contract Code Implentation
 
-Build your Smart Contract. To save time, and for simplicity use the prepared version.
+Implement a Standard ERC-20 Smart Contract. The easiest and safest method is to copy a well tested open source implementation. For this step you will use [remix IDE](www.remix.ethereum.org). 
 
-  - Navigate to ```TestCoinTwo.sol``` and copy the text. This is the Smart Contract that will Issue the ERC 20 tokens.
+  - Navigate to the [Consensys Token Repository](https://github.com/ConsenSys/Tokens). Find EIP20interface.sol and EIP20.sol in the contracts directory. This is the Solidity code you need to deploy your own token. 
   
-### Solidity IDE
+### Build your Solidity Smart Contract in Remix
 Launch [Remix](http://remix.ethereum.org)
-
-  - Hit New File
   
-  - Name the File
+  - Name a new file as EIP20interface.sol
   
-  - Paste Smart Contract
+  - Copy/Paste the contents of EIP20interface.sol from the consensys repo into your new file.
   
-### Edits
-Personalize the token you want to Create:
+  - Think of a cool name for your token and Name a new file as YourTokenName.sol
+  
+  - Copy/Paste the contents of EIP20.sol from the consensys repo into your new file
+  
+### Customize your Solidity Smart Contract
+Now you can personalize the token according to your preferences
 
   - View *Lines 3–15* review the comment section. This is a good reference for the variable you will change in the future.
   
