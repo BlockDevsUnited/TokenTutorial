@@ -25,7 +25,7 @@ Get Some Testnet Ether
   
 ### Find Smart Contract Code Implentation
 
-Find source code for a Standard ERC-20 Smart Contract. You want a well tested open source implementation such as the official Consensys implementation.
+Find Source Code for a Standard ERC-20 Smart Contract. You want a well tested open source implementation such as the official Consensys implementation.
 
   - Navigate to the [Consensys Token Repository](https://github.com/ConsenSys/Tokens). Find EIP20interface.sol and EIP20.sol in the contracts directory. This is the Solidity code you can use to deploy your own token. 
   
@@ -59,26 +59,24 @@ Now you can personalize the token according to your preferences
   
   - Next to the Deploy Button, Enter your InitialAmount, TokenName, Decimals, TokenSymbol as parameters like so: 1000000,"YourTokenName",3,"YTN". Don't forget quotes for the strings.
   
-  - Alternitavely you can directly code the values into your Smart Contract. Just remember to remove the code that sets the variables inside the constructor function
+  - Alternitavely you can directly input values into your Smart Contract code. Just remember to remove the code that sets the variables inside the constructor function
 
-  - Click Deploy
-  
-  - Approve the transaction on metamask
 
 ### Compiling and Deploying
-  -	In Remix, navigate to Settings > **Uncheck** Enable Optimization
   
-  - Hit Compile > check for yellow errors. Ok! If red, there is a problem
+  - Check for errors on remix. Yellow warnings are ok. Red warnings must be fixed before the next step. 
   
-  - Now go to Run > select ```YourTokenName``` and hit deploy
+  - Make sure you are still on the Run tab
   
-  - Approve confirmation on MetaMask. You may need to enable pop ups on Chrome.
+  - Click Deploy
   
-  - Check for confirmation on [EtherScan](https://ropsten.etherscan.io/)
+  - Approve the transaction on metamask. You may need to enable pop ups on your browser
   
-  - When successful, hit contract address and copy it
+  - Wait for the transaction to mine! Check for confirmation on [EtherScan](https://ropsten.etherscan.io/). You can click on your latest transaction in metamask. 
   
-  - Paste into MetaMask Tokens Section
+  - After the transaction has mined, click the contract address and copy it
+  
+  - Paste it into the Tokens sectionin Metamask
 
 **You have now issued your first Token. Great Work! This is just the tip of the iceberg.**
 
