@@ -25,9 +25,9 @@ Get Some Testnet Ether
   
 ### Find Smart Contract Code Implentation
 
-Implement a Standard ERC-20 Smart Contract. The easiest and safest method is to copy a well tested open source implementation. For this step you will use [remix IDE](www.remix.ethereum.org). 
+Find source code for a Standard ERC-20 Smart Contract. You want a well tested open source implementation such as the official Consensys implementation.
 
-  - Navigate to the [Consensys Token Repository](https://github.com/ConsenSys/Tokens). Find EIP20interface.sol and EIP20.sol in the contracts directory. This is the Solidity code you need to deploy your own token. 
+  - Navigate to the [Consensys Token Repository](https://github.com/ConsenSys/Tokens). Find EIP20interface.sol and EIP20.sol in the contracts directory. This is the Solidity code you can use to deploy your own token. 
   
 ### Build your Solidity Smart Contract in Remix
 Launch [Remix](http://remix.ethereum.org)
