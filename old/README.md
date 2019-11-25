@@ -109,9 +109,7 @@ Now you can personalize the token according to your preferences
 
   - Make sure you are still on the Run tab
 
-  - Select YourTokenName in the drop down menu
-
-  - Select "Injected Web3" for your environment
+  - Delect YourTokenName in the drop down menu
 
   - Click Deploy
 
@@ -157,14 +155,26 @@ Now we are going to register this contract. To do this:
 
 To confirm that it worked, go to https://ropsten.etherscan.io/ and look up your metamask address. Hit the **View Tokens** dropdown to see if you tokens are in there.
 
-## Sending Tokens
+## Optional - Sending Tokens
 
 Send some to your neighbours:
 
-  - In Metamask Open the menu and click "Add Tokens"
+  - Use [MyEtherWallet](https://www.myetherwallet.com/) to get tokens out of your MetaMask account.
 
-  - Click Add Custom Token and Input your Contract Address. Your token details should appear automatically
+  - Hit *Send Ether & Tokens*
 
-  - You should now see your token balance. Try sending some tokens to your friend's address Check Etherscan for progress
-  
+  - Select *MetaMask Access* from the dropdown
+
+  - Confirm
+
+  - Add your Contract Address to the Token Balances area to confirm you have the tokens.
+
+  -	Change to your created token
+
+  -	Enter your friend’s public address
+
+  -	Change gas limit to 150,000 for faster transfer
+
+  -	Send! Check etherscan for progress
+
   -	Your friend can then enter your contract info and code to view your tokens in their wallet!
