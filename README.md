@@ -25,7 +25,7 @@ Get Some Testnet Ether
   - Double check Ether was received by hitting the MetaMask Icon
 
 
-### Find Smart Contract Code Implentation
+### Find Smart Contract Code Implementation
 
 Find Source Code for a Standard ERC-20 Smart Contract. You want a well tested open source implementation such as the official Consensys or Open Zeppelin implementation. Select one of the following two options:
 
